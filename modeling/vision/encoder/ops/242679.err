@@ -1,0 +1,41 @@
+/var/spool/slurm/d/job242679/slurm_script: line 19: activate: No such file or directory
+Traceback (most recent call last):
+  File "/seu_share/home/zhangmeng/220246538/zzt/25LPCVC_Track2_Segmentation_Sample_Solution-main/modeling/vision/encoder/ops/setup.py", line 69, in <module>
+    setup(
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/__init__.py", line 117, in setup
+    return distutils.core.setup(**attrs)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 183, in setup
+    return run_commands(dist)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 199, in run_commands
+    dist.run_commands()
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+    self.run_command(cmd)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/dist.py", line 950, in run_command
+    super().run_command(command)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+    cmd_obj.run()
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/_distutils/command/build.py", line 135, in run
+    self.run_command(cmd_name)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/_distutils/cmd.py", line 316, in run_command
+    self.distribution.run_command(command)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/dist.py", line 950, in run_command
+    super().run_command(command)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+    cmd_obj.run()
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 98, in run
+    _build_ext.run(self)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/setuptools/_distutils/command/build_ext.py", line 359, in run
+    self.build_extensions()
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 504, in build_extensions
+    compiler_name, compiler_version = self._check_abi()
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 890, in _check_abi
+    _, version = get_compiler_abi_compatibility_and_version(compiler)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 358, in get_compiler_abi_compatibility_and_version
+    if not check_compiler_ok_for_platform(compiler):
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 320, in check_compiler_ok_for_platform
+    version_string = subprocess.check_output([compiler, '-v'], stderr=subprocess.STDOUT, env=env).decode(*SUBPROCESS_DECODE_ARGS)
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/subprocess.py", line 415, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/seu_share/home/zhangmeng/220246538/.conda/envs/pytorch/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['icpc', '-v']' returned non-zero exit status 1.
