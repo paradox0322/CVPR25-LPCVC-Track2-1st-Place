@@ -12,10 +12,7 @@ We considered a variety of resolution solutions and ultimately determined that t
 
 We fine-tuned the solution successively twice and found that overfitting would occur if the training time exceeded 20 epochs for this task. Therefore, the weights of several attempts were kept within 20 epochs.
 
-There are several  attempts that failed:
-We tried to add the VG(Visual Genome) dataset , but due to the fact that the VG dataset has more than 3k categories, the video memory overflowed during training.
 
-If these can be done, we think the final accuracy and running time may be better.
 
 ## :fire: News
 - [2025.02.13] OpenCV Webinar by Professor Lu introducing LPCVC 2025
